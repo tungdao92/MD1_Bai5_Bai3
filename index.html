@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hihe</title>
+</head>
+<body>
+<div>
+    <div style="background-color: orange;width: 40%;float: left;box-shadow: blue">
+        <h1>Máy Tính</h1>
+        <p>Số thứ nhất:</p> <input type="text" id="nhap1">
+        <p>Số thứ hai:</p> <input type="text" id="nhap2"> <br> <br>
+        <button onclick="phepCong()">Phép Cộng</button>
+        <button onclick="phepTru()">Phép Trừ</button>
+        <button onclick="phepNhan()">Phép Nhân</button>
+        <button onclick="phepChia()">Phép Chia</button>
+        <h1>Kết quả: <span id="ketqua"></span></h1>
+
+        <script>
+            function phepCong () {
+                let nhaplan1 = +document.getElementById('nhap1').value;
+                let nhaplan2 = +document.getElementById('nhap2').value;
+                let cong = nhaplan1 + nhaplan2;
+                document.getElementById('ketqua').innerHTML = 'Phép cộng = '+ cong
+
+            }
+
+            function phepTru() {
+                let nhaplan1 = +document.getElementById('nhap1').value;
+                let nhaplan2 = +document.getElementById('nhap2').value;
+                let tru = nhaplan1 - nhaplan2;
+                document.getElementById('ketqua').innerHTML ='Phép trừ = ' +tru
+            }
+
+            function phepNhan() {
+                let nhaplan1 = +document.getElementById('nhap1').value;
+                let nhaplan2 = +document.getElementById('nhap2').value;
+                let nhan = nhaplan1 * nhaplan2;
+                document.getElementById('ketqua').innerHTML ='Phép nhân = ' +nhan
+            }
+
+            function phepChia() {
+                let nhaplan1 = +document.getElementById('nhap1').value;
+                let nhaplan2 = +document.getElementById('nhap2').value;
+                let chia = nhaplan1 / nhaplan2;
+                document.getElementById('ketqua').innerHTML ='Phép chia = ' +chia
+            }
+
+        </script>
+    </div>
+</div>
+    <div style="background-color: deepskyblue;width: 40%;float: left ;box-shadow: red">
+        <h1>Máy Tính</h1>
+        <p>Số thứ nhất:</p> <input type="text" id="nhap1">
+        <p>Số thứ hai:</p> <input type="text" id="nhap2"> <br> <br>
+        <button onclick="phepConG()">Phép Cộng</button>
+        <button onclick="phepTrU()">Phép Trừ</button>
+        <button onclick="phepNhaN()">Phép Nhân</button>
+        <button onclick="phepChiA()">Phép Chia</button>
+        <h1>Kết quả: <span id="ketqua"></span></h1>
+        <script>
+
+
+
+            }
+        </script>
+
+    </div>
+
+
+</body>
+</html>
